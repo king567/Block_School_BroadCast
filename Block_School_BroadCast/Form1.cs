@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
 using Microsoft.Win32;
+using System.Runtime.InteropServices;
 
 namespace Block_School_BroadCast
 {
@@ -25,6 +26,20 @@ namespace Block_School_BroadCast
             InitializeComponent();
             Check_Broadcast_App_Status();
             Check_System_Switch_User();
+        }
+        [DllImport("user32.dll")]//拖動無窗體的控件
+        public static extern bool ReleaseCapture();
+        [DllImport("user32.dll")]
+        public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
+        public const int WM_SYSCOMMAND = 0x0112;
+        public const int SC_MOVE = 0xF010;
+        public const int HTCAPTION = 0x0002;
+
+        private void Start_MouseDown(object sender, MouseEventArgs e)
+        {
+            //拖動窗體
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
         }
         public void Check_Broadcast_App_Status()
         {
@@ -47,16 +62,23 @@ namespace Block_School_BroadCast
         {
             RegistryKey rgkRun = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", true);
             // 獲得應用進程名稱
-            
-            Int32 RegT = (Int32)rgkRun.GetValue(strShortFileName);
-            if (RegT == 0)
+            string Regl = (string)rgkRun.GetValue(strShortFileName);
+            if(Regl == null)
             {
-                pictureBox2.Image = Properties.Resources.switch_on;
+                Insert_Text("找不到登陸檔");
             }
             else
             {
-                pictureBox2.Image = Properties.Resources.switch_off;
-                a = 0;
+                Int32 RegT = (Int32)rgkRun.GetValue(strShortFileName); 
+                if (RegT == 0)
+                {
+                    pictureBox2.Image = Properties.Resources.switch_on;
+                }
+                else
+                {
+                    pictureBox2.Image = Properties.Resources.switch_off;
+                    a = 0;
+                }
             }
         }
         public void Kill_process()
@@ -145,6 +167,40 @@ namespace Block_School_BroadCast
             {
                 rgkRun.SetValue(strShortFileName, 1, RegistryValueKind.DWord);
                 pictureBox2.Image = Properties.Resources.switch_off;
+            }
+        }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Maxsize_Windows_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+        }
+
+        private void Mini_Size_Windows_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Minn_To_Task_Bar_Click(object sender, EventArgs e)
+        {
+            this.Task_Bar_Icon.Text = "Block Broadcast 已縮小至工作列";
+            this.Task_Bar_Icon.Icon = Properties.Resources.sword_icon;
+            this.WindowState = FormWindowState.Minimized;
+            this.ShowInTaskbar = false;
+            this.Task_Bar_Icon.Visible = true;
+        }
+
+        private void Task_Bar_Icon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Show();
+                this.WindowState = FormWindowState.Normal;
+                this.ShowInTaskbar = true;
             }
         }
     }

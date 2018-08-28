@@ -31,6 +31,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>sword.ico</ApplicationIcon>
+  </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
@@ -88,6 +92,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\switch-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini-max-windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window-shade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sword.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
