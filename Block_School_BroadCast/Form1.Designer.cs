@@ -154,6 +154,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Start_MouseDown);
             // 
             // Minn_To_Task_Bar
             // 
@@ -248,7 +249,7 @@
         private System.Windows.Forms.Button Minn_To_Task_Bar;
         private System.Windows.Forms.Button Mini_Size_Windows;
         private System.Windows.Forms.Button Maxsize_Windows;
-        private System.Windows.Forms.Button Close;
+        private new System.Windows.Forms.Button Close;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.NotifyIcon Task_Bar_Icon;

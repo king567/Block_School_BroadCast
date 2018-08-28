@@ -1,0 +1,9 @@
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\bin\Release\Block_School_BroadCast.exe.config
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\bin\Release\Block_School_BroadCast.exe
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\bin\Release\Block_School_BroadCast.pdb
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Release\Block_School_BroadCast.Form1.resources
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Release\Block_School_BroadCast.Properties.Resources.resources
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Release\Block_School_BroadCast.csproj.GenerateResource.cache
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Release\Block_School_BroadCast.csproj.CoreCompileInputs.cache
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Release\Block_School_BroadCast.exe
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Release\Block_School_BroadCast.pdb
