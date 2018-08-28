@@ -1,0 +1,10 @@
+D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_BroadCast\bin\Debug\Block_School_BroadCast.exe.config
+D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_BroadCast\bin\Debug\Block_School_BroadCast.exe
+D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_BroadCast\bin\Debug\Block_School_BroadCast.pdb
+D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.csprojResolveAssemblyReference.cache
+D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.Form1.resources
+D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.Properties.Resources.resources
+D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.csproj.GenerateResource.cache
+D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.csproj.CoreCompileInputs.cache
+D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.exe
+D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.pdb
