@@ -11,10 +11,11 @@ D:\Users\WIJTB\Documents\vsiual document\Block_School_BroadCast\Block_School_Bro
 C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\bin\Debug\Block_School_BroadCast.exe.config
 C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\bin\Debug\Block_School_BroadCast.exe
 C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\bin\Debug\Block_School_BroadCast.pdb
-C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.csprojAssemblyReference.cache
 C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.Form1.resources
 C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.Properties.Resources.resources
 C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.csproj.GenerateResource.cache
 C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.csproj.CoreCompileInputs.cache
 C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.exe
 C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\obj\Debug\Block_School_BroadCast.pdb
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\bin\Debug\Block_School_BroadCast.exe.CodeAnalysisLog.xml
+C:\Users\king0\Documents\GitHub\Block_School_BroadCast\Block_School_BroadCast\bin\Debug\Block_School_BroadCast.exe.lastcodeanalysissucceeded
