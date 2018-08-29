@@ -62,10 +62,11 @@ namespace Block_School_BroadCast
         {
             RegistryKey rgkRun = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", true);
             // 獲得應用進程名稱
-            string Regl = (string)rgkRun.GetValue(strShortFileName);
+            var Regl = rgkRun.GetValue(strShortFileName);
             if(Regl == null)
             {
                 Insert_Text("找不到登陸檔");
+                pictureBox2.Image = Properties.Resources.switch_on;
             }
             else
             {
@@ -73,10 +74,12 @@ namespace Block_School_BroadCast
                 if (RegT == 0)
                 {
                     pictureBox2.Image = Properties.Resources.switch_on;
+                    Insert_Text("已開啟顯示切換使用者");
                 }
                 else
                 {
                     pictureBox2.Image = Properties.Resources.switch_off;
+                    Insert_Text("已關閉顯示切換使用者");
                     a = 0;
                 }
             }
@@ -162,11 +165,13 @@ namespace Block_School_BroadCast
             { 
                 rgkRun.SetValue(strShortFileName, 0, RegistryValueKind.DWord);
                 pictureBox2.Image = Properties.Resources.switch_on;
+                Insert_Text("已開啟顯示切換使用者");
             }
             else
             {
                 rgkRun.SetValue(strShortFileName, 1, RegistryValueKind.DWord);
                 pictureBox2.Image = Properties.Resources.switch_off;
+                Insert_Text("已關閉顯示切換使用者");
             }
         }
 
